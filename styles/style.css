@@ -100,7 +100,8 @@ nav {
 .border{
   position: absolute;
   bottom: -6.5%;
-  width: 100%;
+  left: -20px;
+  width: 110vw;
   height: 50px;
   background-color: var(--primary-color);
   border-radius: 50%
@@ -130,7 +131,7 @@ nav {
 }
 
 .infoSection .number {
-  width: 48px;
+  min-width: 48px;
   height: 46px;
   margin-bottom: 24px;
   color: var(--primary-color);
@@ -162,8 +163,9 @@ nav {
 .border2 {
   position: absolute;
   z-index: 1;
+  left: -5px;
   bottom: -22px;
-  width: 100%;
+  width: 105vw;
   height: 50px;
   background-color: var(--quaternary-color);
   border-radius: 50%
@@ -186,7 +188,6 @@ nav {
 .descriptionFounder {
   position: absolute;
   top: 345px;
-  height: auto;
   padding: 32px;
   margin: 0 16px;
   text-align: center;
@@ -222,9 +223,12 @@ padding-bottom: 16px;
   border: none;
 }
 
+.rightSpiralFooter{
+  display: none;
+}
+
 footer {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 425px 0 65px;
@@ -237,4 +241,70 @@ footer {
 .socialMedia {
   display: flex;
   gap: 30px;
+}
+
+@media screen and (min-width: 700px) {
+  .rightSpiral {
+    display: block;
+  }
+
+  .leftSpiral {
+    display: block;
+  }
+
+  .mobileImage {
+    bottom: -164px;
+  }
+
+  .mobileImage img{
+    width: 444px;
+    height: 264px;
+  }
+
+  .infoSection {
+    padding: 240px 98px 0;;
+  }
+
+  .infoSection .infoDiv {
+    flex-direction: row;
+  }
+  
+  .infoSection .number{
+    margin-right: 32px;
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+  }
+
+  .photoFounder {
+    position: absolute;
+    z-index: 2;
+    top: 140px;
+    left: 40px;
+  }
+
+  .descriptionFounder {
+    position: absolute;
+    z-index: 3;
+    left: 185px;
+    top: 285px;
+    max-width: 514px;
+    text-align: start;
+  }
+
+  .rightSpiralFooter {
+    display: block;
+    position: absolute;
+    z-index: 4;
+    top: 500px;
+    right: 60px;
+  }
+
+  footer {
+    margin: 590px 0 65px;
+  }
 }
