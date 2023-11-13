@@ -200,7 +200,7 @@ nav {
 
 .descriptionFounder {
   position: relative;
-  top: 345px;
+  top: -54px;
   padding: 32px;
   margin: 0 16px;
   text-align: center;
@@ -251,7 +251,7 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 425px 0 65px;
+  margin: 40px 0 65px;
 }
 
 .logoFooter {
