@@ -113,9 +113,9 @@ nav {
 .border{
   position: absolute;
   bottom: -6.5%;
-  left: -20px;
+  left: revert-layer;
   width: 110vw;
-  height: 50px;
+  height: 105px;
   background-color: var(--primary-color);
   border-radius: 50%
 }
